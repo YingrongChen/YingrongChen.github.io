@@ -1,0 +1,45 @@
+.navbar {
+    min-height: 70px !important;
+    background: #000000 !important;
+    border-width: 0 0 1px;
+    padding-left: 20px;
+}
+
+.profile {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile h2 {
+    font-size: 1.75em;
+    font-weight: 300;
+    color: #000000;
+    margin:10px;
+}
+
+.profile h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.profile a {
+    color: #000000;
+    margin: 0 10px;
+}
+
+.intro {
+    padding: 30px;
+    position: relative;
+}
+
+.intro a {
+    color: #000000;
+    font-weight: bolder;
+}
