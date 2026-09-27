@@ -6,120 +6,104 @@
   <meta name="author" content="Yingrong Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yingrong Chen | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
-<body>
-  <nav class="site-nav">
-    <div class="nav-shell container">
-      <a class="brand" href="/index.html">Yingrong Chen</a>
-      <ul class="nav-links">
-        <li><a class="active" href="/index.html">Home</a></li>
-      </ul>
-    </div>
-  </nav>
-  <main class="container page-shell">
-    <section class="hero-grid">
-      <div class="profile-card">
-        <img class="portrait" src="/images/profile.png" itemprop="image" alt="Profile portrait of Yingrong Chen" />
-        <h1 itemprop="name">Yingrong Chen</h1>
-        <p class="subtitle" itemprop="jobTitle">Quantum Software Engineer</p>
-        <p class="subtitle" itemprop="worksFor">Microsoft</p>
-        <div class="contact">
-          <a href="https://www.linkedin.com/in/yingrong-chen/" aria-label="LinkedIn profile">LinkedIn</a>
-          <a href="https://github.com/YingrongChen" aria-label="GitHub profile">GitHub</a>
-          <a href="https://www.youtube.com/@yingrongchen5112/videos" aria-label="YouTube channel">YouTube</a>
+<body class="profile-poster-page">
+  <main class="profile-poster">
+    <div class="poster-shape poster-shape-blue" aria-hidden="true"></div>
+    <div class="poster-shape poster-shape-peach" aria-hidden="true"></div>
+    <div class="poster-shape poster-shape-bottom" aria-hidden="true"></div>
+
+    <header class="poster-hero">
+      <div class="poster-portrait">
+        <img src="/images/profile.png" itemprop="image" alt="Yingrong Chen" />
+      </div>
+      <div class="poster-intro">
+        <p class="hello">Hello, my name is</p>
+        <h1 itemprop="name">Yingrong <span>Chen</span></h1>
+        <p class="intro-copy">
+          I am a quantum software engineer who study and implements various algorithms on computers that do not quite exist yet.
+        </p>
+      </div>
+    </header>
+
+    <div class="poster-grid">
+      <section class="poster-card coded-card">
+        <h2>Things I coded</h2>
+        <div class="code-badges">
+          <a href="https://github.com/microsoft/qdk-chemistry/tree/main/python/src/qdk_chemistry/algorithms" aria-label="QDK Chemistry algorithms">
+            <span class="code-ring">Python</span>
+            <strong>qdk-chemistry</strong>
+          </a>
+          <a href="https://github.com/fedimser/quant-arith-re" aria-label="QuantumArithmetic project">
+            <span class="code-ring">Q#</span>
+            <strong>Quantum arithmetic</strong>
+          </a>
+          <div>
+            <span class="code-ring">Cirq</span>
+            <strong>Shor's algorithm</strong>
+          </div>
+          <a href="https://github.com/microsoft/skala" aria-label="Skala project">
+            <span class="code-ring">CUDA</span>
+            <strong>ML chemistry</strong>
+          </a>
         </div>
-      </div>
+      </section>
 
-      <div class="intro-card">
-        <h2>About Me</h2>
-        <p>
-          I am a Quantum Software Engineer at Microsoft, where I implement and optimize quantum algorithms
-          for applications in chemistry, material science and cryptography.
-          I hold a B.S. in Chemistry (High Honors) and Computer Science from Emory University and am
-          currently pursuing graduate studies in Applied Mathematics at the University of Washington.
-        </p>
-        <p>
-          My work spans quantum algorithms, quantum chemistry, and scientific computing.
-          I contribute to open-source projects such as
-          <a href="https://github.com/microsoft/qdk-chemistry">qdk-chemistry</a> and
-          <a href="https://github.com/microsoft/skala">skala</a>,
-          and have been recognized with an NSF Graduate Research Fellowship Honorable Mention and a Barry Goldwater Scholarship.
-        </p>
-      </div>
-    </section>
-
-    <section class="content-grid">
-      <article class="info-card">
-        <h3>Education</h3>
-        <p>
-          University of Washington, Graduate Non-Matriculated, Applied Mathematics (Sep 2025 – Present)<br />
-          Emory University, B.S. in Chemistry (High Honors) &amp; Computer Science (GPA: 3.987 / 4.0)
-        </p>
-      </article>
-
-      <article class="info-card">
-        <h3>Research Focus</h3>
-        <p>
-          Quantum algorithms and resource estimation, quantum simulation and chemistry, block encoding and qubitization, and sparse state preparation.
-        </p>
-      </article>
-
-      <article class="info-card">
-        <h3>Technical Toolkit</h3>
-        <p>
-          Python, C++, Q#, Qiskit, Cirq, Stim, OpenFermion, Qualtran, NumPy, SciPy, Azure HPC, MPI, CUDA.
-        </p>
-      </article>
-    </section>
-
-    <section class="project-section">
-      <h3>Selected Publications &amp; Open Source</h3>
-      <div class="project-grid">
-        <article class="project-card">
-          <h4>QuantumArithmetic</h4>
-          <p><a href="https://github.com/fedimser/quant-arith-re">fedimser/quant-arith-re</a></p>
-          <p>
-            Implemented 10+ quantum arithmetic algorithms in Q# (ripple-carry addition, Karatsuba multiplication, windowed exponentiation). Integrated into the Q# 1.15 release. Published at IEEE Quantum Week (QCE) 2025.
-          </p>
+      <section class="poster-card experience-card">
+        <h2>My experience</h2>
+        <article>
+          <p class="date">2025 – Now</p>
+          <h3>Microsoft</h3>
+          <p class="role">Quantum Software Engineer 2</p>
+          <p>Building quantum algorithms for cryptography, chemistry, and analytics.</p>
         </article>
-
-        <!-- <article class="project-card">
-          <h4>QDK/Chemistry</h4>
-          <p><a href="https://github.com/microsoft/qdk-chemistry">microsoft/qdk-chemistry</a></p>
-          <p>
-            A modular toolkit for quantum chemistry applications. Implemented sparse isometry, energy estimators, and a patented sparse state preparation algorithm using Python, Qiskit, and Q#.
-          </p>
-        </article> -->
-
-        <article class="project-card">
-          <h4>Skala</h4>
-          <p><a href="https://github.com/microsoft/skala">microsoft/skala</a></p>
-          <p>
-            Added MPI and CUDA support for ML-based exchange-correlation functionals in C++ for accurate and scalable density functional theory calculations.
-          </p>
+        <article>
+          <p class="date">2024 – 2025</p>
+          <h3>Microsoft</h3>
+          <p class="role">Software Engineer</p>
+          <p>GPU-accelerated quantum mechanics calculations and Azure-powered computational drug design.</p>
         </article>
-
-        <article class="project-card">
-          <h4>Shor's Algorithm Implementation</h4>
-          <p>
-            Implemented quantum circuits and classical pre/post-processing for Shor's algorithm using Python, Cirq, and Stim. Validates RSA-2048 resource estimates with Quantum Resource Estimator v3. Paper in preparation.
-          </p>
+        <article>
+          <p class="date">2022 – 2023</p>
+          <h3>Meiler Lab + Fang Liu Lab</h3>
+          <p class="role">Research Student</p>
+          <p>Protein modeling and QM/MM.</p>
         </article>
-      </div>
-    </section>
+      </section>
 
+      <section class="poster-card photos-card">
+        <h2>Photos</h2>
+        <div class="media-grid">
+          <div class="media-space cat-photo-space" role="img" aria-label="Space reserved for a cat photo"></div>
+          <div class="media-space dance-video-space" role="img" aria-label="Space reserved for a dancing video"></div>
+        </div>
+      </section>
+
+      <section class="poster-card education-card">
+        <h2>My education</h2>
+        <div class="education-row">
+          <p>2025 – Now</p>
+          <div><strong>University of Washington</strong><span>Physics</span></div>
+        </div>
+        <div class="education-row">
+          <p>2022 – 2023</p>
+          <div><strong>Emory University</strong><span>Chemistry + Computer Science</span></div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="poster-footer">
+      <a href="https://www.linkedin.com/in/yingrong-chen/">LinkedIn</a>
+      <a href="https://github.com/YingrongChen">GitHub</a>
+      <a href="https://www.youtube.com/@yingrongchen5112/videos">YouTube</a>
+      <a href="mailto:yingrong.chen.momo@gmail.com">Email</a>
+    </footer>
   </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
 
 </body>
 
