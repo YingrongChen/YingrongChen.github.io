@@ -690,7 +690,7 @@ a {
 /* Poster-style home */
 .profile-poster-page {
     --poster-ink: #141722;
-    --poster-blue: #7188c0;
+    --poster-blue: #546aa8;
     --poster-blue-soft: #dbe5ec;
     --poster-peach: #ffb596;
     --poster-peach-soft: #f9d9c9;
@@ -785,7 +785,7 @@ a {
 }
 
 .poster-intro {
-    padding-top: 10px;
+    padding: 10px 0 16px;
 }
 
 .hello {
@@ -809,8 +809,8 @@ a {
 .intro-copy {
     max-width: 390px;
     margin-bottom: 0;
-    color: #686875;
-    font-size: 0.86rem;
+    color: #5a5a66;
+    font-size: 0.95rem;
     line-height: 1.55;
 }
 
@@ -821,7 +821,8 @@ a {
     grid-template-areas:
         "coded experience"
         "photos experience"
-        "photos education";
+        "photos education"
+        "writing writing";
     gap: 20px 24px;
     align-items: stretch;
 }
@@ -851,9 +852,27 @@ a {
 
 .code-badges > * {
     min-width: 0;
+    padding: 6px 2px;
+    border-radius: 14px;
     color: var(--poster-ink);
     text-align: center;
     text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.code-badges a:hover,
+.code-badges a:focus-visible {
+    background: rgba(255, 247, 239, 0.45);
+}
+
+.code-badges a .code-ring {
+    transition: transform 0.35s ease;
+}
+
+.code-badges a:hover .code-ring,
+.code-badges a:focus-visible .code-ring {
+    transform: rotate(-15deg) scale(1.08);
+    border-top-color: #141722;
 }
 
 .code-ring {
@@ -873,7 +892,7 @@ a {
 
 .code-ring + strong {
     display: block;
-    font-size: 0.66rem;
+    font-size: 0.78rem;
     line-height: 1.25;
 }
 
@@ -889,27 +908,27 @@ a {
 
 .experience-card .date {
     margin-bottom: 3px;
-    font-size: 0.69rem;
+    font-size: 0.75rem;
     font-style: italic;
     font-weight: 700;
 }
 
 .experience-card h3 {
     margin-bottom: 1px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .experience-card .role {
     margin-bottom: 8px;
-    font-size: 0.76rem;
+    font-size: 0.84rem;
     font-style: italic;
 }
 
 .experience-card article > p:last-child {
     margin-bottom: 0;
-    color: rgba(255, 255, 255, 0.86);
-    font-size: 0.72rem;
-    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.82rem;
+    line-height: 1.5;
 }
 
 .photos-card {
@@ -935,9 +954,41 @@ a {
 }
 
 .dance-video-space {
+    position: relative;
     align-self: end;
     aspect-ratio: 4 / 5;
+    display: grid;
+    place-items: center;
     border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.dance-video-space:hover,
+.dance-video-space:focus-visible {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.play-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--poster-peach);
+    transition: transform 0.2s ease;
+}
+
+.play-icon::before {
+    margin-left: 4px;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 14px solid var(--poster-ink);
+    content: "";
+}
+
+.dance-video-space:hover .play-icon,
+.dance-video-space:focus-visible .play-icon {
+    transform: scale(1.1);
 }
 
 .education-card {
@@ -947,7 +998,7 @@ a {
 
 .education-row {
     display: grid;
-    grid-template-columns: 82px 1fr;
+    grid-template-columns: 96px 1fr;
     gap: 8px;
 }
 
@@ -958,7 +1009,7 @@ a {
 .education-row p,
 .education-row strong,
 .education-row span {
-    font-size: 0.72rem;
+    font-size: 0.82rem;
 }
 
 .education-row p {
@@ -977,6 +1028,65 @@ a {
     font-style: italic;
 }
 
+.writing-card {
+    grid-area: writing;
+    background: rgba(219, 229, 236, 0.85);
+}
+
+.pub-list,
+.honor-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pub-list li + li {
+    margin-top: 14px;
+}
+
+.pub-list a {
+    display: block;
+    color: var(--poster-ink);
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-decoration-color: #f2763f;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.pub-list span {
+    display: block;
+    margin-top: 3px;
+    color: #4a4f5c;
+    font-size: 0.78rem;
+    font-style: italic;
+}
+
+.writing-card .honors-heading {
+    margin: 28px 0 14px;
+}
+
+.honor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.honor-list li {
+    padding: 7px 14px;
+    border-radius: 16px;
+    background: #fffefa;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.honor-list li span {
+    margin-right: 8px;
+    color: #c4501f;
+    font-weight: 700;
+}
+
 .poster-footer {
     margin-top: 28px;
     display: flex;
@@ -986,10 +1096,26 @@ a {
 
 .poster-footer a {
     color: var(--poster-ink);
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-decoration-color: #f2763f;
+    text-decoration-thickness: 2px;
     text-underline-offset: 4px;
+}
+
+.poster-footer a:hover {
+    color: #c4501f;
+}
+
+.profile-poster a:focus-visible {
+    outline: 3px solid #141722;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .profile-poster * {
+        transition: none !important;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1013,7 +1139,8 @@ a {
     .poster-hero {
         min-height: 0;
         grid-template-columns: 120px 1fr;
-        gap: 20px;
+        gap: 0 20px;
+        align-items: start;
     }
 
     .poster-portrait {
@@ -1031,8 +1158,27 @@ a {
         font-size: 0.8rem;
     }
 
+    .poster-intro {
+        display: contents;
+    }
+
+    .poster-portrait {
+        grid-row: 1 / 3;
+    }
+
+    .hello {
+        align-self: end;
+    }
+
+    .poster-intro h1 {
+        grid-column: 2;
+    }
+
     .intro-copy {
-        font-size: 0.7rem;
+        grid-column: 1 / -1;
+        max-width: none;
+        margin-top: 18px;
+        font-size: 0.92rem;
     }
 
     .poster-grid {
@@ -1042,7 +1188,8 @@ a {
             "coded"
             "experience"
             "photos"
-            "education";
+            "education"
+            "writing";
     }
 
     .poster-card {
@@ -1057,16 +1204,12 @@ a {
 @media (max-width: 390px) {
     .poster-hero {
         grid-template-columns: 94px 1fr;
-        gap: 14px;
+        gap: 0 14px;
     }
 
     .poster-portrait {
         width: 94px;
         height: 94px;
-    }
-
-    .intro-copy {
-        display: none;
     }
 
     .poster-footer {
