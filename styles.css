@@ -1254,7 +1254,8 @@ html {
     margin-top: clamp(42px, 6vw, 78px);
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(28px, 4vw, 58px);
+    column-gap: clamp(28px, 4vw, 58px);
+    row-gap: 28px;
     align-items: start;
 }
 
@@ -1267,11 +1268,37 @@ html {
 }
 
 .research-posts-grid #research {
+    grid-column: 1;
+    grid-row: 1 / span 2;
     background: var(--poster-blue-soft);
 }
 
 .research-posts-grid #footprint {
+    grid-column: 2;
+    grid-row: 1;
     background: var(--poster-peach-soft);
+}
+
+.research-posts-grid #footprint .footprint-item {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 0;
+}
+
+.research-posts-grid #footprint .footprint-list {
+    border-top: 1px solid #ced5df;
+}
+
+.research-posts-grid .constellation-card {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
+    padding: clamp(20px, 2.5vw, 30px);
+    gap: 12px;
+}
+
+.research-posts-grid .constellation-stage {
+    min-height: 0;
 }
 
 .research-posts-grid .footprint-heading {
@@ -1286,6 +1313,13 @@ html {
 @media (max-width: 1100px) {
     .research-posts-grid {
         grid-template-columns: 1fr;
+    }
+
+    .research-posts-grid #research,
+    .research-posts-grid #footprint,
+    .research-posts-grid .constellation-card {
+        grid-column: 1;
+        grid-row: auto;
     }
 }
 
