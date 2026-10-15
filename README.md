@@ -6,7 +6,6 @@
 ![Cirq](https://img.shields.io/badge/-Cirq-black?logo=google&logoColor=white)
 
 I work on fault-tolerant quantum algorithms, resource estimation, and quantum chemistry software at Microsoft.
-I really like physics, biology, and computer science. I only fully understand an idea once I have implemented it.
 
 ## Currently working on
 
@@ -14,5 +13,7 @@ I really like physics, biology, and computer science. I only fully understand an
 - Develop new quantum algorithms like [sparse state preparation](https://arxiv.org/abs/2608.20593)
 
 🎓 M.S. Physics, University of Washington · B.S. Chemistry & Computer Science, Emory University
+
 🌐 Projects & background: [yingrongchen.github.io](https://yingrongchen.github.io/)
+
 **Reach me:** [LinkedIn](https://www.linkedin.com/in/yingrong-chen/)
