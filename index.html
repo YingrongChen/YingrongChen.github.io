@@ -13,97 +13,266 @@
 </head>
 
 <body class="profile-poster-page">
-  <main class="profile-poster">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="section-nav" aria-label="Portfolio sections">
+    <div class="section-nav-inner">
+      <a class="section-nav-brand" href="#top" aria-label="Back to top">YC</a>
+      <div class="section-nav-links">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#code">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#footprint">Posts</a>
+        <a href="#constellation">Interests</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="profile-poster" id="main-content">
     <div class="poster-shape poster-shape-blue" aria-hidden="true"></div>
     <div class="poster-shape poster-shape-peach" aria-hidden="true"></div>
     <div class="poster-shape poster-shape-bottom" aria-hidden="true"></div>
 
-    <header class="poster-hero">
-      <div class="poster-portrait">
-        <img src="/images/profile.png" itemprop="image" alt="Yingrong Chen" />
-      </div>
+    <header class="poster-hero" id="top">
+      <button class="poster-portrait" type="button" aria-label="Show Lady the cat" aria-pressed="false" title="Double-click to meet Lady">
+        <img src="/images/profile.png" data-person-src="/images/profile.png" data-cat-src="/images/lady-cat.webp" itemprop="image" alt="Yingrong Chen" />
+      </button>
       <div class="poster-intro">
         <p class="hello">Hello, my name is</p>
         <h1 itemprop="name">Yingrong <span>Chen</span></h1>
         <p class="intro-copy">
-          I am a quantum software engineer who study and implements various algorithms on computers that do not quite exist yet.
+          I work on fault-tolerant quantum algorithms, resource estimation, and quantum chemistry software.
         </p>
       </div>
     </header>
 
     <div class="poster-grid">
-      <section class="poster-card coded-card">
-        <h2>Things I coded</h2>
-        <div class="code-badges">
-          <a href="https://github.com/microsoft/qdk-chemistry/tree/main/python/src/qdk_chemistry/algorithms" aria-label="QDK Chemistry algorithms">
-            <span class="code-ring">Python</span>
-            <strong>qdk-chemistry</strong>
-          </a>
-          <a href="https://github.com/fedimser/quant-arith-re" aria-label="QuantumArithmetic project">
-            <span class="code-ring">Q#</span>
-            <strong>Quantum arithmetic</strong>
-          </a>
-          <div>
-            <span class="code-ring">Cirq</span>
-            <strong>Shor's algorithm</strong>
-          </div>
-          <a href="https://github.com/microsoft/skala" aria-label="Skala project">
-            <span class="code-ring">CUDA</span>
-            <strong>ML chemistry</strong>
-          </a>
+      <section class="poster-card education-card" id="education">
+        <h2>Education</h2>
+        <div class="education-row">
+          <p>2025 – Now</p>
+          <div><h3>University of Washington</h3><span>Physics</span></div>
+        </div>
+        <div class="education-row">
+          <p>2020 – 2023</p>
+          <div><h3>Emory University</h3><span>Chemistry + Computer Science</span></div>
         </div>
       </section>
 
-      <section class="poster-card experience-card">
-        <h2>My experience</h2>
+      <section class="poster-card experience-card" id="experience">
+        <h2>Experience</h2>
         <article>
           <p class="date">2025 – Now</p>
-          <h3>Microsoft</h3>
+          <h3><a class="experience-link" href="https://quantum.microsoft.com/en-us/vision/quantum-for-chemistry" target="_blank" rel="noreferrer">Microsoft</a></h3>
           <p class="role">Quantum Software Engineer 2</p>
           <p>Building quantum algorithms for cryptography, chemistry, and analytics.</p>
         </article>
         <article>
           <p class="date">2024 – 2025</p>
-          <h3>Microsoft</h3>
+          <h3><a class="experience-link" href="https://azure.microsoft.com/en-us/blog/quantum/2024/06/18/introducing-two-powerful-new-capabilities-in-azure-quantum-elements-generative-chemistry-and-accelerated-dft/" target="_blank" rel="noreferrer">Microsoft</a></h3>
           <p class="role">Software Engineer</p>
           <p>GPU-accelerated quantum mechanics calculations and Azure-powered computational drug design.</p>
         </article>
         <article>
           <p class="date">2022 – 2023</p>
-          <h3>Meiler Lab + Fang Liu Lab</h3>
+          <h3><a class="experience-link" href="https://meilerlab.org/" target="_blank" rel="noreferrer">Meiler Lab</a></h3>
           <p class="role">Research Student</p>
-          <p>Protein modeling and QM/MM.</p>
+          <p>Protein modeling, molecular dynamics, and C++ contributions to Rosetta.</p>
+        </article>
+        <article>
+          <p class="date">2022 – 2023</p>
+          <h3><a class="experience-link" href="https://flgroup.emorychem.science/people/" target="_blank" rel="noreferrer">Fang Liu Lab</a></h3>
+          <p class="role">Research Student</p>
+          <p>QM/MM and TDDFT studies of green fluorescent protein environments.</p>
         </article>
       </section>
 
-      <section class="poster-card photos-card">
-        <h2>Photos</h2>
-        <div class="media-grid">
-          <div class="media-space cat-photo-space" role="img" aria-label="Space reserved for a cat photo"></div>
-          <div class="media-space dance-video-space" role="img" aria-label="Space reserved for a dancing video"></div>
-        </div>
-      </section>
-
-      <section class="poster-card education-card">
-        <h2>My education</h2>
-        <div class="education-row">
-          <p>2025 – Now</p>
-          <div><strong>University of Washington</strong><span>Physics</span></div>
-        </div>
-        <div class="education-row">
-          <p>2022 – 2023</p>
-          <div><strong>Emory University</strong><span>Chemistry + Computer Science</span></div>
+      <section class="poster-card coded-card" id="code">
+        <h2>Projects</h2>
+        <div class="code-badges">
+          <a href="https://github.com/microsoft/qdk-chemistry/tree/main/python/src/qdk_chemistry/algorithms" aria-label="QDK Chemistry algorithms">
+            <span class="code-ring code-ring-stacked"><span>Python</span><span>C++</span></span>
+            <strong>qdk-chemistry</strong>
+            <small class="code-description">Quantum chemistry algorithms, workflows, and resource estimation.</small>
+          </a>
+          <a href="https://github.com/fedimser/quant-arith-re" aria-label="QuantumArithmetic project">
+            <span class="code-ring">Q#</span>
+            <strong>Quantum arithmetic</strong>
+            <small class="code-description">Q# implementations and resource estimates for quantum arithmetic algorithms.</small>
+          </a>
+          <div>
+            <span class="code-ring">Cirq</span>
+            <strong>Shor's algorithm</strong>
+            <small class="code-description">Fault-tolerant factoring circuits and resource analysis in Cirq.</small>
+          </div>
+          <a href="https://github.com/microsoft/skala" aria-label="Skala project">
+            <span class="code-ring">CUDA</span>
+            <strong>ML chemistry</strong>
+            <small class="code-description">GPU-accelerated deep-learning exchange-correlation functionals.</small>
+          </a>
         </div>
       </section>
     </div>
 
+    <div class="research-posts-grid">
+    <section class="online-footprint research-output" id="research" aria-labelledby="research-output-title">
+      <header class="footprint-heading">
+        <h2 id="research-output-title">Research paper</h2>
+      </header>
+
+      <div class="footprint-list">
+        <article class="footprint-item">
+          <div class="footprint-meta">
+            <time datetime="2026-08-20">2026</time>
+            <span>arXiv:2608.20593</span>
+          </div>
+          <div>
+            <h3><a class="footprint-link" href="https://arxiv.org/abs/2608.20593" target="_blank" rel="noreferrer">Clifford-efficient sparse state preparation for molecular wavefunctions</a></h3>
+            <p>Preparing sparse molecular states on a quantum computer using affine compression over GF(2).</p>
+          </div>
+        </article>
+
+        <article class="footprint-item">
+          <div class="footprint-meta">
+            <time datetime="2026-01-21">2026</time>
+            <span>arXiv:2601.15253</span>
+          </div>
+          <div>
+            <h3><a class="footprint-link" href="https://arxiv.org/abs/2601.15253" target="_blank" rel="noreferrer">QDK/Chemistry: A Modular Toolkit for Quantum Chemistry Applications</a></h3>
+            <p>A toolkit for quantum algorithms in chemistry that connects classical calculations to quantum circuit execution and resource estimation.</p>
+          </div>
+        </article>
+
+        <article class="footprint-item">
+          <div class="footprint-meta">
+            <time datetime="2025-08-30">2025</time>
+            <span>IEEE Quantum Week</span>
+          </div>
+          <div>
+            <h3><a class="footprint-link" href="https://ieeexplore.ieee.org/document/11250189" target="_blank" rel="noreferrer">Quantum Arithmetic Algorithms: Implementation, Resource Estimation, and Comparison</a></h3>
+            <p>Implementations and resource comparisons for quantum addition, multiplication, division, and modular exponentiation.</p>
+          </div>
+        </article>
+
+        <article class="footprint-item">
+          <div class="footprint-meta">
+            <time datetime="2025-06-17">2025</time>
+            <span>arXiv:2506.14665</span>
+          </div>
+          <div>
+            <h3><a class="footprint-link" href="https://arxiv.org/abs/2506.14665" target="_blank" rel="noreferrer">Accurate and scalable exchange-correlation with deep learning</a></h3>
+            <p>The Skala deep-learning exchange-correlation functional for accurate, scalable first-principles simulation.</p>
+          </div>
+        </article>
+
+        <article class="footprint-item">
+          <div class="footprint-meta">
+            <time datetime="2023">2023</time>
+            <span>Emory honors thesis</span>
+          </div>
+          <div>
+            <h3><a class="footprint-link" href="https://etd.library.emory.edu/downloads/fx719n94x?locale=en" target="_blank" rel="noreferrer">Undergraduate honors thesis in chemistry</a></h3>
+            <p>Green fluorescent protein simulations and energy-gap fluctuation calculations using QM/MM and TDDFT.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="online-footprint" id="footprint" aria-labelledby="footprint-title">
+      <header class="footprint-heading">
+        <h2 id="footprint-title">Online footprint</h2>
+      </header>
+
+      <div class="footprint-list">
+        <article class="footprint-item">
+          <div class="footprint-meta">
+            <time datetime="2024-05-28">May 2024</time>
+            <span>Emory News</span>
+          </div>
+          <div>
+            <h3><a class="footprint-link" href="https://news.emorychem.science/yingrong-chen/" target="_blank" rel="noreferrer">Emory alumni profile</a></h3>
+          </div>
+        </article>
+
+        <article class="footprint-item">
+          <div class="footprint-meta">
+            <time datetime="2024">2024</time>
+            <span>Emory Chemistry Stories</span>
+          </div>
+          <div>
+            <h3><a class="footprint-link" href="https://chemistry.emory.edu/stories/NSF2024/" target="_blank" rel="noreferrer">Chemistry celebrates student success in the 2024 NSF GRFP Competition</a></h3>
+          </div>
+        </article>
+
+        <article class="footprint-item">
+          <div class="footprint-meta">
+            <time datetime="2023-04-20">April 2023</time>
+            <span>Emory News</span>
+          </div>
+          <div>
+            <h3><a class="footprint-link" href="https://news.emory.edu/stories/2023/04/four-emory-college-juniors-win-elite-goldwater-scholarship" target="_blank" rel="noreferrer">Four Emory College juniors win elite Goldwater Scholarship</a></h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    </div>
+
+    <section class="constellation-card" id="constellation" aria-labelledby="constellation-title">
+      <h2 id="constellation-title">Interest constellation</h2>
+
+      <div class="constellation-filters" role="group" aria-label="Filter knowledge areas">
+        <button type="button" class="constellation-filter is-active" data-cluster="all" aria-pressed="true">All</button>
+        <button type="button" class="constellation-filter" data-cluster="algorithms" aria-pressed="false">Quantum algorithms</button>
+        <button type="button" class="constellation-filter" data-cluster="software-engineering" aria-pressed="false">Software engineering</button>
+        <button type="button" class="constellation-filter" data-cluster="biochemistry" aria-pressed="false">Biochemistry</button>
+        <button type="button" class="constellation-filter" data-cluster="physics-math" aria-pressed="false">Physics &amp; math</button>
+      </div>
+
+      <div class="constellation-stage">
+        <canvas id="knowledge-constellation" tabindex="0" role="img" aria-label="Interactive map of Yingrong Chen's interests"></canvas>
+        <div class="constellation-tooltip" aria-hidden="true"></div>
+      </div>
+
+      <div class="constellation-legend" aria-label="Interest colors">
+        <span class="constellation-legend-item legend-algorithms">Quantum algorithms</span>
+        <span class="constellation-legend-item legend-software">Software engineering</span>
+        <span class="constellation-legend-item legend-biochemistry">Biochemistry</span>
+        <span class="constellation-legend-item legend-physics">Physics &amp; math</span>
+      </div>
+
+      <div class="constellation-detail" aria-live="polite" hidden>
+        <strong></strong>
+        <span></span>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <header>
+        <h2 id="contact-title">Contact</h2>
+        <p class="contact-kicker">// Let's connect</p>
+      </header>
+      <div class="contact-body">
+        <p class="contact-note">Open to quantum software engineering roles.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:yingrong.chen.momo@gmail.com"><span>Email</span><span aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="https://www.linkedin.com/in/yingrong-chen/" target="_blank" rel="noreferrer"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="https://github.com/YingrongChen" target="_blank" rel="noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="https://www.youtube.com/@yingrongchen5112/videos" target="_blank" rel="noreferrer"><span>YouTube</span><span aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="/resume.pdf" download><span>Resume</span><span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
     <footer class="poster-footer">
-      <a href="https://www.linkedin.com/in/yingrong-chen/">LinkedIn</a>
-      <a href="https://github.com/YingrongChen">GitHub</a>
-      <a href="https://www.youtube.com/@yingrongchen5112/videos">YouTube</a>
-      <a href="mailto:yingrong.chen.momo@gmail.com">Email</a>
+      <p>&copy; 2026 Yingrong Chen</p>
     </footer>
   </main>
+
+  <script src="/profile.js?v=20261014" defer></script>
+  <script src="/constellation.js?v=20261014-8" defer></script>
 
 </body>
 

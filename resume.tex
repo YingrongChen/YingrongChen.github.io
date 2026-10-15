@@ -63,11 +63,11 @@
 \begin{itemize}[leftmargin=0in, label={}, itemsep=-2pt]
     \resumeSubheading
       {University of Washington}{Seattle, WA}
-      {Graduate Non-Matriculated, Applied Mathematics}{Sep 2025 -- Present}
+      {M.S. in Physics (Part-time)}{Sep 2025 -- Present}
     \vspace{2pt}
     \resumeSubheading
       {Emory University}{Atlanta, GA}
-      {B.S. in Chemistry (High Honors), Double Major in Computer Science (GPA: 3.987 / 4.0)}{Aug 2022 -- Dec 2023}
+      {B.S. in Chemistry (High Honors), Double Major in Computer Science (GPA: 3.987 / 4.0)}{Aug 2020 -- Dec 2023}
 \end{itemize}
 
 % --- EXPERIENCE ---
@@ -78,19 +78,20 @@
     {Microsoft}{Redmond, WA} 
     {Quantum Software Engineer 2}{Jul 2025 -- Present}
     \resumeItemListStart
-    \resumeItem{Implemented quantum circuits and classical pre/post-processing for Shor’s algorithm; optimized primitives such as QROM and adder; and generate resource estimates under different hardware assumptions, error correction codes and magic state factories.}
-    % \resumeItem{Preparing an open-source release and a scientific paper; this work validates \textbf{RSA-2048} resource estimates and refines the timeline for a potential \textbf{quantum cryptographic attack}.}
-    \resumeItem{For quantum simulation of electronic structure and model hamiltonian, implemented sum-of-squares spectral amplification algorithm, variants of block encoding primitives, variants of trotterization, and matrix product state (MPS) preparation algorithms.}
-    \resumeItem{For potential quantum applications in optimization and finance, implemented Quantum Tensor PCA algorithm and decoded quantum interferometry.}
+    \resumeItem{Developed and evaluated \textbf{fault-tolerant quantum algorithms}, including Shor's algorithm, QPE, Hamiltonian simulation, block encoding, and quantum chemistry workflows, analyzing algorithmic performance and resource tradeoffs.}
+    \resumeItem{Performed \textbf{quantum resource estimation and system-level analysis}, translating algorithms into logical-resource requirements and evaluating tradeoffs across designs and fault-tolerant architectures.}
+    \resumeItem{Engineered \textbf{production-quality quantum software} with modular architectures, automated testing, CI/CD, documentation, reusable components, and notebooks for external and open-source users.}
+    \resumeItem{Collaborated across \textbf{research, engineering, and product stakeholders} to translate ambiguous quantum research objectives into technical roadmaps, implementation milestones, demonstrations, and deliverables.}
     \resumeItemListEnd
 
     \resumeSubSubheading
-  {Contract Software Engineer}{Jan 2024 -- Jun 2025}
-  \resumeItemListStart
-      \resumeItem{Designed a quantum algorithm for sparse state preparation (manuscript in preparation).}
-      \resumeItem{Added MPI and CUDA support for ML-based exchange-correlation functionals in the open-source skala using C++.}
-        \resumeItem{Implemented ddX solvation models and QM/MM workflows in C++ for in-house computational chemistry software.}
-        \resumeItem{Designed scalable computational chemistry workflows on Azure HPC, integrating pharmacokinetic screening, consensus docking, and free-energy perturbation to process high-throughput data for 9M+ molecules targeting CDK12 protein.}
+      {Contract Software Engineer}{Jan 2024 -- Jun 2025}
+      \resumeItemListStart
+      \resumeItem{Designed a quantum algorithm for \textbf{sparse state preparation} (\textbf{patented}).}
+      \resumeItem{Implemented quantum phase estimation, state preparation, and energy estimators in the open-source \textbf{qdk-chemistry} using Python, Qiskit, and Q\#.}
+      \resumeItem{Added \textbf{MPI} and \textbf{CUDA} support for ML-based exchange-correlation functionals in the open-source \textbf{skala} using C++.}
+      \resumeItem{Implemented ddX solvation models and QM/MM workflows in C++ for in-house computational chemistry software.}
+      \resumeItem{Designed scalable computational chemistry workflows on \textbf{Azure HPC}, integrating pharmacokinetic screening, consensus docking, and free-energy perturbation to process high-throughput data for 9M+ molecules targeting CDK12 protein.}
       \resumeItemListEnd
 
 \end{itemize}
@@ -102,11 +103,12 @@
       {Quantum Open Source Foundation (QOSF)}{Remote}
       {Mentee}{Nov 2024 -- Sep 2025}
       \resumeItemListStart
-        \resumeItem{Implemented 10+ quantum arithmetic algorithms in Q\#, including ripple-carry addition, Karatsuba multiplication, and windowed exponentiation.}
+        \resumeItem{Implemented 10+ quantum arithmetic algorithms in Q\#, including ripple-carry addition, Karatsuba multiplication, and windowed exponentiation. These serve as modular building blocks for quantum algorithms such as Shor's.}
+        \resumeItem{Open-sourced the \textbf{QuantumArithmetic} library and integrated it into the Q\# 1.15 release.}
       \resumeItemListEnd
     
     \resumeSubheading
-      {Fang Liu Lab, Emory University}{Atlanta, GA}
+      {Fang Liu Lab at Emory University}{Atlanta, GA}
       {Research Student}{Jan 2022 -- Dec 2023}
       \resumeItemListStart
         \resumeItem{Investigated how protein environments influence energy gap fluctuations in green fluorescent protein and its mutants using QM/MM simulations in Amber and computed their absorption spectra using TDDFT in TeraChem.}
@@ -116,7 +118,7 @@
       {Jens Meiler Lab, Vanderbilt University \& Rosetta Commons}{Nashville, TN}
       {Research Student}{May 2022 -- Aug 2023}
       \resumeItemListStart
-        \resumeItem{Studied phosphorylation effects on $\alpha$-synuclein interactions with MHCII and TCR in Parkinson’s disease using AlphaFold2, Rosetta and Amber.}
+        \resumeItem{Studied phosphorylation effects on $\alpha$-synuclein interactions with MHCII and TCR in Parkinson's disease using AlphaFold2, Rosetta and Amber.}
         \resumeItem{Integrated the BioChemical Library into Rosetta for protein-ligand energy evaluation and conformer generation in C++.}
        \resumeItemListEnd
     
@@ -126,9 +128,10 @@
 % --- PUBLICATIONS & MANUSCRIPTS ---
 \section{Selected Publications \& Open Source Code}
 \begin{itemize}[leftmargin=0.15in, label={--}, itemsep=-2pt]
-    \resumeItem{Baker, Nathan et al. \textit{QDK/Chemistry: A Modular Toolkit for Quantum Chemistry Applications}. arXiv:2601.15253 (2026).}
-    \resumeItem{Luise, Giulia et al. \textit{Accurate and Scalable Exchange–Correlation with Deep Learning}. arXiv:2506.14665 (2025).}
-    \resumeItem{Fedoriaka, Dmytro et al. \textit{Quantum Arithmetic Algorithms: Implementation, Resource Estimation, and Comparison}. IEEE Quantum Week (QCE) 2025.}
+  \resumeItem{Chen, Yingrong et al. \textit{Clifford-efficient sparse state preparation for molecular wavefunctions}. arXiv:2608.20593 (2026).}
+  \resumeItem{Baker, Nathan et al. \textit{QDK/Chemistry: A Modular Toolkit for Quantum Chemistry Applications}. arXiv:2601.15253 (2026). \textbf{[microsoft/qdk-chemistry]}}
+  \resumeItem{Luise, Giulia et al. \textit{Accurate and Scalable Exchange--Correlation with Deep Learning}. arXiv:2506.14665 (2025). \textbf{[microsoft/skala]}}
+  \resumeItem{Fedoriaka, Dmytro et al. \textit{Quantum Arithmetic Algorithms: Implementation, Resource Estimation, and Comparison}. IEEE Quantum Week (QCE) 2025. \textbf{[fedimser/quant-arith-re]}}
 \end{itemize}
 
 \section{Awards \& Honors}
@@ -136,6 +139,5 @@
     \resumeItem{\textbf{NSF Graduate Research Fellowship Honorable Mention} \hfill \textit{2023}}
     \resumeItem{\textbf{Barry Goldwater Scholarship} \hfill \textit{2022}}
     \resumeItem{\textbf{Emory Chemistry Academic Excellence} \hfill \textit{2022}}
-    \resumeItem{\textbf{NSF XSEDE EMPOWER \& Oxford Research Scholar} \hfill \textit{2021}}
 \end{itemize}
 \end{document}
