@@ -13,6 +13,6 @@ I really like physics, biology, and computer science. I only fully understand an
 - Fault-tolerant implementations and resource studies for quantum algorithms in [QDK/Chemistry](https://github.com/microsoft/qdk-chemistry)
 - Develop new quantum algorithms like [sparse state preparation](https://arxiv.org/abs/2608.20593)
 
-- 🎓 M.S. Physics, University of Washington · B.S. Chemistry & Computer Science, Emory University
-- 🌐 Projects & background: [yingrongchen.github.io](https://yingrongchen.github.io/)
-- **Reach me:** [LinkedIn](https://www.linkedin.com/in/yingrong-chen/)
+🎓 M.S. Physics, University of Washington · B.S. Chemistry & Computer Science, Emory University
+🌐 Projects & background: [yingrongchen.github.io](https://yingrongchen.github.io/)
+**Reach me:** [LinkedIn](https://www.linkedin.com/in/yingrong-chen/)
