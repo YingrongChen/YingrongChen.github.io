@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=20261014-5" />
+  <link rel="stylesheet" href="/styles.css?v=20261015-3" />
 </head>
 
 <body class="profile-poster-page">
@@ -127,6 +127,7 @@
           <div class="footprint-meta">
             <time datetime="2026-08-20">2026</time>
             <span>arXiv:2608.20593</span>
+            <span class="authorship-credit">First author</span>
           </div>
           <div>
             <h3><a class="footprint-link" href="https://arxiv.org/abs/2608.20593" target="_blank" rel="noreferrer">Clifford-efficient sparse state preparation for molecular wavefunctions</a></h3>
@@ -149,6 +150,7 @@
           <div class="footprint-meta">
             <time datetime="2025-08-30">2025</time>
             <span>IEEE Quantum Week</span>
+            <span class="authorship-credit">Equal contribution</span>
           </div>
           <div>
             <h3><a class="footprint-link" href="https://ieeexplore.ieee.org/document/11250189" target="_blank" rel="noreferrer">Quantum Arithmetic Algorithms: Implementation, Resource Estimation, and Comparison</a></h3>
@@ -171,6 +173,7 @@
           <div class="footprint-meta">
             <time datetime="2023">2023</time>
             <span>Emory honors thesis</span>
+            <span class="authorship-credit">First author</span>
           </div>
           <div>
             <h3><a class="footprint-link" href="https://etd.library.emory.edu/downloads/fx719n94x?locale=en" target="_blank" rel="noreferrer">Undergraduate honors thesis in chemistry</a></h3>
@@ -221,24 +224,17 @@
     <section class="constellation-card" id="constellation" aria-labelledby="constellation-title">
       <h2 id="constellation-title">Interest constellation</h2>
 
-      <div class="constellation-filters" role="group" aria-label="Filter knowledge areas">
-        <button type="button" class="constellation-filter is-active" data-cluster="all" aria-pressed="true">All</button>
-        <button type="button" class="constellation-filter" data-cluster="algorithms" aria-pressed="false">Quantum algorithms</button>
-        <button type="button" class="constellation-filter" data-cluster="software-engineering" aria-pressed="false">Software engineering</button>
-        <button type="button" class="constellation-filter" data-cluster="biochemistry" aria-pressed="false">Biochemistry</button>
-        <button type="button" class="constellation-filter" data-cluster="physics-math" aria-pressed="false">Physics &amp; math</button>
+      <div class="constellation-filters" role="group" aria-label="Interest legend and filter">
+        <button type="button" class="constellation-filter legend-all is-active" data-cluster="all" aria-pressed="true">All</button>
+        <button type="button" class="constellation-filter legend-algorithms" data-cluster="algorithms" aria-pressed="false">Quantum algorithms</button>
+        <button type="button" class="constellation-filter legend-software" data-cluster="software-engineering" aria-pressed="false">Software engineering</button>
+        <button type="button" class="constellation-filter legend-biochemistry" data-cluster="biochemistry" aria-pressed="false">Biochemistry</button>
+        <button type="button" class="constellation-filter legend-physics" data-cluster="physics-math" aria-pressed="false">Physics &amp; math</button>
       </div>
 
       <div class="constellation-stage">
         <canvas id="knowledge-constellation" tabindex="0" role="img" aria-label="Interactive map of Yingrong Chen's interests"></canvas>
         <div class="constellation-tooltip" aria-hidden="true"></div>
-      </div>
-
-      <div class="constellation-legend" aria-label="Interest colors">
-        <span class="constellation-legend-item legend-algorithms">Quantum algorithms</span>
-        <span class="constellation-legend-item legend-software">Software engineering</span>
-        <span class="constellation-legend-item legend-biochemistry">Biochemistry</span>
-        <span class="constellation-legend-item legend-physics">Physics &amp; math</span>
       </div>
 
       <div class="constellation-detail" aria-live="polite" hidden>
@@ -271,7 +267,7 @@
   </main>
 
   <script src="/profile.js?v=20261014" defer></script>
-  <script src="/constellation.js?v=20261014-8" defer></script>
+  <script src="/constellation.js?v=20261015-2" defer></script>
 
 </body>
 
